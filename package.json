@@ -1,0 +1,27 @@
+{
+  "name": "mern-task-manager",
+  "version": "1.0.0",
+  "description": "Taskbar manager using M.E.R.N",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "backend": "nodemon backend/server.js",
+    "frontend": "npm run dev --prefix frontend",
+    "both": "concurrently \"npm run backend\" \"npm run frontend\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ali-Kisang"
+  },
+  "author": "Kisang Ali",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
